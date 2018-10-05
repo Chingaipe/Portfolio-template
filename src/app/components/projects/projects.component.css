@@ -1,0 +1,10 @@
+
+.about-card {
+    margin: 5% auto;
+    border-radius: 1% 1% 1% 1%;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600;
+}

@@ -1,0 +1,26 @@
+.about-card {
+    text-align: center;
+    margin: 5% auto;
+    border-radius: 3px;
+}
+
+mat-card:first-child .mat-card-image {
+    margin-top: 0;
+}
+
+mat-card-title {
+    font-weight: 600;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+.justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
