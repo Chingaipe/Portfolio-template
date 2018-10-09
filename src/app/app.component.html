@@ -17,7 +17,7 @@
 
   </mat-toolbar>
 
-  <mat-sidenav-container fxFlexFill>
+  <mat-sidenav-container id="content" fxFlexFill>
 
     <mat-sidenav color="primary" class="sidemenu" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true">
       <div fxLayout="column">
@@ -26,7 +26,7 @@
       </div>
     </mat-sidenav>
     <mat-sidenav-content fxLayout="column" fxFlexFill class="container">
-      <router-outlet></router-outlet>
+      <router-outlet style="padding-bottom: -64px;"></router-outlet>
       <!-- Routed content comes here -->
 
       <app-footer></app-footer>

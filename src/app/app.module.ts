@@ -11,6 +11,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 // navigation routers
 const appRoutes: Routes = [
@@ -35,7 +37,8 @@ const appRoutes: Routes = [
     MatCardModule,
     MatExpansionModule,
     MatIconModule,
-    MatSidenavModule
+    MatSidenavModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

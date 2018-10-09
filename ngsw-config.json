@@ -1,0 +1,31 @@
+{
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/*.css",
+          "/*.js"
+        ],
+        "urls": [
+          "https://fonts.googleapis.com/css?family=Roboto:300,400,500",
+          "https://fonts.googleapis.com/icon?family=Material+Icons",
+          "https://friendsofgorges.org/wp-content/uploads/2016/05/ComingSoonHeadshot.png"
+        ]
+      }
+    }, {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/**"
+        ]
+      }
+    }
+  ]
+}
